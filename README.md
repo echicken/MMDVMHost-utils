@@ -17,8 +17,8 @@ ld.on(
 );
 ld.on(
     'dmr_rf_rx_voice_end',
-    (data) => console.log('DMR voice transmission ended', data);
-)
+    (data) => console.log('DMR voice transmission ended', data)
+);
 ld.init(true, false, true, true);
 ```
 
