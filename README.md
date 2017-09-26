@@ -250,5 +250,5 @@ state.init();
 - config_update
     - Identical to the Confrigger 'update' event described above
 
-Additionally, *Status* emits all of the same events fired by LogDriver, as
+Additionally, *State* emits all of the same events fired by LogDriver, as
 described above.
