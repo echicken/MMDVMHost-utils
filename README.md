@@ -1,16 +1,6 @@
 # MMDVMHost-utils
 A node.js module to monitor MMDVMHost logs, monitor and modify the configuration file.
 
-- [LogDriver](#logdriver)
-    - Consumes, parses, and monitors MMDVMHost log files
-- [Confrigger](#confrigger)
-    - Reads, writes, and monitors an MMDVMHost configuration file
-- [State](#state)
-    - Uses [LogDriver](#logdriver) to track the current state of MMDVMHost
-    - Exposes an instance of [Confrigger](#confrigger)
-    
-The current focus of the [LogDriver](#logdriver) component is on DMR-related features.  D-Star, System Fusion, etc. related stuff may be added at a later date, but I don't care about those things right now.
-
 ## LogDriver
 
 Monitors the MMDVMHost log, parses log lines into objects, and emits events when
@@ -246,7 +236,7 @@ state.init();
 - cfg (Confrigger)
     - An instance of Confrigger (see above)
 - ld (LogDriver)
-    - And instance of LogDriver (see above)
+    - An instance of LogDriver (see above)
 
 ### Methods
 
