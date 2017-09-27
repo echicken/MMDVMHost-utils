@@ -175,7 +175,9 @@ console.log(cfrig.get_cfg().General.Callsign);
 ## State
 
 A wrapper around LogDriver and Confrigger that lets you monitor the current
-state of MMDVMHost, view and change the settings.
+state of MMDVMHost, view and change the settings.  Watches the current log file
+and switches to a new log file when it appears.  Watches the configuration file
+for changes (in case it's modified by some external process, eg. a text editor).
 
 ```js
 const State = require('MMDVMHost-utils').State;
