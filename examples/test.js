@@ -100,6 +100,8 @@ state.on(
     }
 );
 
+state.ld.on('unhandled_log_line', (data) => console.log(data));
+
 state.init();
 
 console.log(state.cfg.get_cfg());
