@@ -202,36 +202,37 @@ state.init();
             - version (String)
             - description (String)
             - git_id (String)
-    - dmr_id (Object)
-        - lookup_thread_running (Boolean)
-    - dmr_net (Object)
-        - opening (Boolean)
-            - Connecting to a DMR master
-        - sending_authorization (Boolean)
-            - Connected, attempting to authenticate
-        - sending_configuration (Boolean)
-            - Connected, authenticated, sending configuration to master
-        - open (Boolean)
-            - Connected and ready to go
-    - dmr_rf (Object)
-        - rx (Array of Objects)
-            - rx (Boolean)
-                - Currently receiving a transmission
-                    - (We saw a voice header or voice frame and we've yet to be told that the transmission ended)
-            - rx_start (Date || null)
-                - Time that the transmission started
-            - seconds (Number) (float)
-                - Not populated until transmission has ended
-            - slot (Number) (integer)
-                - Time slot of this transmission
-            - source (String)
-                - Callsign or DMR ID
-            - destination (String)
-                - Talk group, etc.
-            - bit_error_rate : (Number) (float)
-                - Bit error rate for this transmission, as a percentage
-        - tx (Array)
-            - currently unused
+    - dmr (Object)
+        - id (Object)
+            - lookup_thread_running (Boolean)
+        - net (Object)
+            - opening (Boolean)
+                - Connecting to a DMR master
+            - sending_authorization (Boolean)
+                - Connected, attempting to authenticate
+            - sending_configuration (Boolean)
+                - Connected, authenticated, sending configuration to master
+            - open (Boolean)
+                - Connected and ready to go
+        - rf (Object)
+            - rx (Array of Objects)
+                - rx (Boolean)
+                    - Currently receiving a transmission
+                        - (We saw a voice header or voice frame and we've yet to be told that the transmission ended)
+                - rx_start (Date || null)
+                    - Time that the transmission started
+                - seconds (Number) (float)
+                    - Not populated until transmission has ended
+                - slot (Number) (integer)
+                    - Time slot of this transmission
+                - source (String)
+                    - Callsign or DMR ID
+                - destination (String)
+                    - Talk group, etc.
+                - bit_error_rate : (Number) (float)
+                    - Bit error rate for this transmission, as a percentage
+            - tx (Array)
+                - currently unused
 - cfg (Confrigger)
     - An instance of Confrigger (see above)
 
