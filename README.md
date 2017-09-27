@@ -235,6 +235,8 @@ state.init();
                 - currently unused
 - cfg (Confrigger)
     - An instance of Confrigger (see above)
+- ld (LogDriver)
+    - And instance of LogDriver (see above)
 
 ### Methods
 
